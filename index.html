@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">feedback</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">FAQ</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">share</a></li>
+              <li class="navigation__item"><a href="#about-us" class="navigation__link">about us</a></li>
+          </ul>
+      </nav>
+  </div>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <span class="icon" style="background:red; color:black;">
+              <i class="fas fa-compact-disc"></i>
+            </span>
+            <b style="color:red; font-size: 3rem;">F</b><i style="color:black; font-size: 2rem;">limo</i><b style="color:red; font-size: 3rem;">P</b><i style="color:black; font-size: 2rem;">edia</i>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div id="home" class="container bodyheight">
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+        <div class="column">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+      <div class="column is-half notification is-primary tutorial">
+        <h1 class="title">Search for a different Movie in both sides</h1>
+        <p class="subtitle">we will suggest you which one is best</p>
+      </div>
+    </div>
+    <footer id="about-us" class="footer is-primary is-bold hero hero-body">
+      <h1 class="title">About us</h1>
+      <h4 class="subtitle">for educational purpose</h4>
+    </footer>
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
